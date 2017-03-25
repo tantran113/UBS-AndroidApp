@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.yenpham.ubs">
+
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <!-- https://mvnrepository.com/artifact/javax.mail/mail -->
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application android:name=".App">
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:networkSecurityConfig="@xml/network_security_config">
+        <activity
+            android:name=".welcom_class"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".login_gg"
+            android:label="Login" />
+        <activity
+            android:name=".menu"
+            android:label="HOME" />
+        <activity
+            android:name=".firstTimeLogin"
+            android:label="Registration" />
+        <!--
+ ATTENTION: This was auto-generated to add Google Play services to your project for
+     App Indexing.  See https://g.co/AppIndexing/AndroidStudio for more information.
+        -->
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+        <activity
+            android:name=".validation"
+            android:label="UTA student Verification" />
+        <activity android:name=".sendEmail" />
+        <activity android:name=".MainActivity" />
+        <activity android:name=".MailSenderActivity" />
+        <activity
+            android:name=".createForSaleClassifiedActivity"
+            android:exported="true"
+            android:label="For sale"
+            android:parentActivityName=".classifiedActivity" />
+        <activity
+            android:name=".categoryActivity"
+            android:exported="true"
+            android:label="Category"
+            android:parentActivityName=".classifiedActivity" />
+        <activity
+            android:name=".createHousingClassifiedActivity"
+            android:exported="true"
+            android:label="Housing Classified"
+            android:parentActivityName=".classifiedActivity" />
+        <activity
+            android:name=".JoinAClubActivity"
+            android:exported="true"
+            android:label="Club"
+            android:parentActivityName=".joinedClubActivity" />
+        <activity
+            android:name=".myClubActivity"
+            android:exported="true"
+            android:label="My club"
+            android:parentActivityName=".JoinAClubActivity" />
+        <activity
+            android:name=".joinedClubActivity"
+            android:exported="true"
+            android:label="Joined Club"
+            android:parentActivityName=".JoinAClubActivity" />
+        <activity
+            android:name=".createClubActivity"
+            android:exported="true"
+            android:label="Create Club"
+            android:parentActivityName=".JoinAClubActivity" />
+        <activity
+            android:id="@+id/discussion"
+            android:name=".clubDiscussionActivity"
+            android:exported="true"
+            android:label="Discussion"
+            android:parentActivityName=".myClubActivity" />
+        <activity
+            android:name=".manageClassifiedActivity"
+            android:exported="true"
+            android:label="Manage Classified"
+            android:parentActivityName=".classifiedActivity" />
+        <activity
+            android:name=".displayDetailClassifiedActivity"
+            android:exported="true"
+            android:label="Detail"
+            android:parentActivityName=".classifiedActivity" />
+        <activity
+            android:name=".clubDetailActivity"
+            android:exported="true"
+            android:label="Club Detail"
+            android:parentActivityName=".joinedClubActivity" />
+        <activity
+            android:name=".discussionTopicActivity"
+            android:exported="true"
+            android:label="Discussion Topic"
+            android:parentActivityName=".clubDetailActivity" />
+        <activity
+            android:name=".eventTopicActivity"
+            android:exported="true"
+            android:label="Event Topics"
+            android:parentActivityName=".clubDetailActivity" />
+        <activity
+            android:name=".clubEventActivity"
+            android:exported="true"
+            android:label="Event Discussion"
+            android:parentActivityName=".eventTopicActivity" />
+        <activity
+            android:name=".classifiedActivity"
+            android:exported="true" />
+        <activity
+            android:name=".testactivity"
+            android:exported="true" />
+
+        <activity
+            android:name=".aboutUS"
+            android:label="About US" />
+
+    </application>
+
+</manifest>

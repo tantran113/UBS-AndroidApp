@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_about_us"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorHomeButtonTextColor"
+    tools:context="com.example.yenpham.ubs.aboutUS">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="40pt"
+        android:id="@+id/relativeLayout2">
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/aboutuspic"/>
+
+        <ImageView
+            android:layout_width="40pt"
+            android:layout_height="40pt"
+            app:srcCompat="@drawable/aboutus"
+            android:id="@+id/imageView3"
+            android:layout_marginStart="25dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="37dp"
+        android:layout_marginLeft="4pt"
+        android:layout_marginRight="4pt"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/relativeLayout3">
+
+    </RelativeLayout>
+
+    <TextView
+        android:text="Project Name: UNIVERSITY BAZAAR SYSTEM"
+
+        android:textSize="7pt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/relativeLayout2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp"
+        android:textColor="@color/colorWhite"
+        android:id="@+id/textView3" />
+
+
+    <TextView
+        android:gravity="center_horizontal"
+        android:textColor="@color/colorWhite"
+        android:textSize="7pt"
+        android:text="Developers: Team 9 - CSE 3310 - FALL 2016"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView3"
+        android:layout_marginTop="10dp"
+        android:id="@+id/textView4" />
+
+    <TextView
+        android:gravity="center_horizontal"
+        android:textColor="@color/colorWhite"
+        android:text="YEN PHAM"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView5"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="12dp"
+        android:id="@+id/textView6" />
+
+    <TextView
+        android:gravity="center_horizontal"
+        android:textColor="@color/colorWhite"
+        android:text="TAN TRAN"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView8"
+        android:layout_below="@+id/textView6" />
+
+    <TextView
+        android:gravity="center_horizontal"
+        android:textColor="@color/colorWhite"
+        android:text="THAO NGUYEN"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView9"
+        android:layout_below="@+id/textView8"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:gravity="center_horizontal"
+        android:textColor="@color/colorWhite"
+        android:text="THANG TRAN"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView9"
+        android:layout_alignEnd="@+id/textView8"
+        android:id="@+id/textView10" />
+
+    <ImageView
+        android:layout_width="40pt"
+        android:layout_height="40pt"
+        app:srcCompat="@drawable/teammember"
+        android:id="@+id/imageView5"
+        android:layout_below="@+id/textView4"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="11dp"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:text="TEAM MEMBERS:"
+        android:textSize="9pt"
+        android:textStyle="bold"
+        android:textColor="@color/colorHomeButtonBorderColor"
+        android:id="@+id/textView5"
+        android:layout_marginTop="16dp"
+        android:layout_below="@+id/imageView5"
+        android:layout_alignParentStart="true" />
+
+    <Button
+
+        android:background="@drawable/phone"
+        android:layout_width="20pt"
+        android:layout_height="20pt"
+        android:id="@+id/button4"
+        android:layout_below="@+id/textView7"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:background="@drawable/email23"
+        android:layout_width="20pt"
+        android:layout_height="20pt"
+        android:id="@+id/emailButton"
+        android:layout_below="@+id/textView7"
+        android:layout_toEndOf="@+id/imageView5" />
+
+    <TextView
+        android:layout_marginBottom="7pt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:text="CONTACT US"
+        android:textSize="9pt"
+        android:textStyle="bold"
+        android:textColor="@color/colorHomeButtonBorderColor"
+        android:id="@+id/textView7"
+        android:layout_marginTop="11dp"
+        android:layout_below="@+id/textView10"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:background="@drawable/sms"
+        android:layout_width="20pt"
+        android:layout_height="20pt"
+        android:id="@+id/sms"
+        android:layout_alignTop="@+id/button4"
+        android:layout_toStartOf="@+id/imageView5" />
+
+
+</RelativeLayout>

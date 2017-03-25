@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/welcome_layout">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorHomeButtonTextColor"
+
+        android:layout_below="@+id/lay"
+
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true">
+
+        <LinearLayout
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:background="@color/colorHomeButtonTextColor"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:padding="10pt"
+                android:text="Enter Your Verification Code Here"
+                android:textColor="@color/colorWhite"
+                android:textSize="8pt"
+                android:textStyle="bold" />
+            <EditText
+                android:id="@+id/veriCode"
+                android:layout_width="100pt"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:padding="4pt"
+                android:hint="5 digit numbers"
+                android:gravity="center_horizontal"/>
+            <Button
+                android:layout_margin="10dp"
+                android:id="@+id/submit"
+                android:layout_width="100pt"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="5pt"
+                android:background="@drawable/buttondefault"
+                android:text="SUBMIT"
+                android:textSize="8pt"
+                android:textColor="@color/colorHomeButtonTextColor"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/cancel"
+                android:layout_width="100pt"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/buttondefault"
+                android:textSize="8pt"
+                android:text="CANCEL"
+                android:textColor="@color/colorHomeButtonTextColor"
+                android:textStyle="bold"/>
+
+            <ImageView
+                android:layout_marginTop="10pt"
+                android:layout_width="wrap_content"
+                android:layout_height="200dp"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/horse1"
+                android:id="@+id/imageView" />
+        </LinearLayout>
+    </LinearLayout>
+
+
+</RelativeLayout>
